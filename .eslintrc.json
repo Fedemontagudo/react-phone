@@ -1,0 +1,37 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:cypress/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "max-len": [
+            "error", 
+            {"code": 120, "ignoreStrings": true} 
+        ],
+        "cypress/no-unnecessary-waiting": 0,
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "printWidth": 120
+            },
+            { 
+                "usePrettierrc": true
+            }
+
+        ]
+    }
+
+}
